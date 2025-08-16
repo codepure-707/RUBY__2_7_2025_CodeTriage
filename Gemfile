@@ -15,9 +15,9 @@ end
 
 # Core
 if ENV["RAILS_MASTER"] == "1"
-  gem "rails", git: "https://github.com/rails/rails.git"
+  gem "rails", ">= 7.1.5.2", git: "https://github.com/rails/rails.git"
 else
-  gem "rails", "7.0.8"
+  gem "rails", "7.1.5.2"
 end
 
 # API & Networking
