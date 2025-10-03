@@ -134,5 +134,5 @@ group :development, :test do
   gem "faker", require: false
   gem "pry"
   gem "standardrb", require: false
-  gem "rubocop-performance"
+  gem "rubocop-performance", ">= 1.20.0"
 end
