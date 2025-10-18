@@ -15,9 +15,9 @@ end
 
 # Core
 if ENV["RAILS_MASTER"] == "1"
-  gem "rails", git: "https://github.com/rails/rails.git"
+  gem "rails", ">= 7.0.8.1", git: "https://github.com/rails/rails.git"
 else
-  gem "rails", "7.0.8"
+  gem "rails", "7.0.8.1"
 end
 
 # API & Networking
@@ -27,7 +27,7 @@ gem "git_hub_bub"
 gem "puma"
 gem "puma_worker_killer"
 gem "rack-timeout"
-gem "rack-canonical-host"
+gem "rack-canonical-host", ">= 1.3.0"
 
 # Assets
 gem "autoprefixer-rails"
@@ -38,20 +38,20 @@ gem "neat", "~> 1.7"
 gem "normalize-rails"
 gem "sassc"
 gem "sassc-rails"
-gem "slim-rails"
-gem "sprockets"
-gem "sprockets-rails"
+gem "slim-rails", ">= 3.7.0"
+gem "sprockets", ">= 4.2.0"
+gem "sprockets-rails", ">= 3.5.0"
 gem "uglifier", ">= 1.0.3"
 
 # Authentication & Authorization
-gem "devise"
-gem "omniauth"
-gem "omniauth-rails_csrf_protection"
+gem "devise", ">= 4.9.4"
+gem "omniauth", ">= 2.1.2"
+gem "omniauth-rails_csrf_protection", ">= 1.0.2"
 gem "omniauth-github"
 
 # Backgroud jobs
-gem "sidekiq"
-gem "sinatra"
+gem "sidekiq", ">= 7.2.0"
+gem "sinatra", ">= 4.2.0"
 
 # Caching
 gem "dalli"
@@ -78,7 +78,7 @@ gem "oj"
 gem "bluecloth"
 gem "local_time"
 gem "maildown"
-gem "wicked"
+gem "wicked", ">= 1.4.0"
 
 # Pagination
 gem "will_paginate"
@@ -88,8 +88,8 @@ gem "bootsnap", require: false
 gem "flamegraph"
 gem "matrix"
 gem "prawn"
-gem "rack-mini-profiler"
-gem "rails-autoscale-web"
+gem "rack-mini-profiler", ">= 3.2.0"
+gem "rails-autoscale-web", ">= 1.1.1"
 gem "rbtrace"
 gem "sentry-raven"
 gem "scout_apm"
@@ -117,7 +117,7 @@ group :development do
 end
 
 group :test do
-  gem "capybara"
+  gem "capybara", ">= 3.38.0"
   gem "launchy" # Not essential but helpful for save_and_open_page
   gem "minitest"
   gem "mocha", require: false
@@ -129,8 +129,8 @@ group :test do
 end
 
 group :development, :test do
-  gem "derailed_benchmarks"
-  gem "dotenv-rails"
+  gem "derailed_benchmarks", ">= 2.1.2"
+  gem "dotenv-rails", ">= 3.0.0"
   gem "faker", require: false
   gem "pry"
   gem "standardrb", require: false
