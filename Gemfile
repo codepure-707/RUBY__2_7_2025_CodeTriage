@@ -60,7 +60,7 @@ gem "dalli"
 gem "pg"
 
 # Email
-gem "mail", require: ["mail", "mail/utilities", "mail/parsers"] # parsers is used by `valid_email` and may be causing https://github.com/mikel/mail/issues/912#issuecomment-170121429
+gem "mail", "2.9.0", require: ["mail" # parsers is used by `valid_email` and may be causing https://github.com/mikel/mail/issues/912#issuecomment-170121429
 gem "premailer-rails"
 gem "valid_email"
 
@@ -68,7 +68,7 @@ gem "valid_email"
 gem "mime-types", require: "mime/types/columnar"
 
 # JavaScript
-gem "jquery-rails"
+gem "jquery-rails", ">= 4.6.1"
 gem "render_async"
 
 # JSON
