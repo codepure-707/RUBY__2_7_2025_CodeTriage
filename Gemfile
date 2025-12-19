@@ -100,7 +100,7 @@ gem "stackprof"
 gem "sitemap_generator"
 
 # Storage
-gem "aws-sdk-s3"
+gem "aws-sdk-s3", ">= 1.208.0"
 
 # Utilities
 gem "rake"
